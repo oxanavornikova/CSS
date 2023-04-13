@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Street Block</title>
+    <style>
+        body{
+            background-color: #223;
+        }
+        .street{
+            border: 1px dotted red;
+        }
+        .house{
+            height: 150px;
+            width: 100px;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+
+        .building-tall{
+            display: inline-block;
+            height: 300px;
+            width: 100px;
+            background-color: beige;
+            vertical-align: bottom;
+        }
+
+        .scara{
+            display: inline-block;
+            height: 40px;
+            border-bottom: 1px solid black;
+            width: 100px;
+        }
+
+        .windows{
+            display: inline-block;
+            height: 30px;
+            border: 1px solid black;
+            transform: translateX(5px) translateY(5px);
+            width: 25px;
+            background-color: aqua;
+        }
+
+        .door{
+            display: inline-block;
+            height: 40px;
+            width: 30px;
+            transform: translateX(37px);
+            background-color: black;
+            vertical-align: bottom;
+            margin-top: 15px;
+            
+        }
+
+        .building-small{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: burlywood;
+            vertical-align: bottom;
+        }
+
+        .house-roof{
+            height: 0px;
+            width: 0px;
+            /*background-color: red;*/
+
+            /*TRIANGLE*/
+            border:50px solid white;
+            border-top-width: 0px;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: brown;
+            border-bottom-width: 70px;
+        }
+        .house-wall{
+            background-color: antiquewhite;
+            height: 80px;
+        }
+
+        .house-window{
+            width: 30px;
+            height: 30px;
+            border: 2px solid brown;
+            transform: translateX(33px) translateY(23px);
+        }
+
+        .geam-hor{
+            border-bottom: 2px solid brown;
+            width: inherit;
+            display: inline-block;
+            height: 15px;
+
+        }
+        .geam-vert{
+            border-bottom: 2px solid brown;
+            width: inherit;
+            display: inline-block;
+            height: 15px;
+            transform: rotate(90deg) translateX(-15px) translateY(-7px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="street">
+
+        <div class="house">
+            <div class="house-roof"></div>
+            <div class="house-wall"> 
+                <div class="house-window">
+                    <div class="geam-hor"></div>
+                    <div class="geam-vert"></div>
+                </div>
+        </div>
+        </div>
+        <div class="building-tall">
+                <div class="scara">
+                <div class="windows"></div>
+                <div class="windows"></div>
+                <div class="windows"></div>
+            </div>
+            <div class="scara">
+                <div class="windows"></div>
+                <div class="windows"></div>
+                <div class="windows"></div>
+            </div>
+            <div class="scara">
+                <div class="windows"></div>
+                <div class="windows"></div>
+                <div class="windows"></div>
+            </div>
+            <div class="scara">
+                <div class="windows"></div>
+                <div class="windows"></div>
+                <div class="windows"></div>
+            </div>
+            <div class="scara">
+                <div class="windows"></div>
+                <div class="windows"></div>
+                <div class="windows"></div>
+            </div>
+            <div class="scara">
+                <div class="windows"></div>
+                <div class="windows"></div>
+                <div class="windows"></div>
+            </div>
+            <div class="door"></div>
+            
+        </div>    
+        <div class="building-small">
+            SMALL BUILDING
+        </div> 
+
+        </div>
+    </div>
+    
+</body>
+</html>
