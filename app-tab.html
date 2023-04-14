@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APP TAB example | Pseudo </title>
+    <style>
+        .tabs{
+            /*border: 1px dotted black;*/
+            list-style: none;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        .tabs-item{
+           border: 1px solid #d9d9d9; 
+           display: inline-block;
+           border-radius: 5px;
+
+           padding: 20px 10px;
+           margin: 5px;
+           text-align: center;
+           transition: 0.35s;
+           height: 110px;
+        }
+
+        .tabs-item:hover {
+            background-color: #cccccc;
+        }
+
+        .tabs-img{
+            margin-bottom: 20px;
+        }
+
+        .tabs-link{
+            text-decoration: none;
+            color: #333;
+        }
+        .tab-options{
+            font-size: 40px;
+            line-height:10px;
+            background-color: #999999;
+
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            /*opacity: 0.0;*/
+            transition: 0.35s;
+            transform: translateY(-125px) translateX(60px);
+        }
+        .tab-options:hover{
+            opacity: 1.0;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="tabs">
+
+        <li 
+            class="tabs-item"
+            title="acces this account"
+        >
+            <a class="tabs-link"  href="#">
+                <img class="tabs-img" src="https://icons.iconarchive.com/icons/pictogrammers/material/72/github-icon.png" alt="">
+                <br>
+                username_here
+            </a>
+            <div class="tab-options">
+                .<br>.<br>.
+            </div>
+        </li>
+
+        <li class="tabs-item">
+            tab2
+        </li>
+        <li class="tabs-item">
+            tab3
+        </li>
+    </ul>
+
+
+
+
+</body>
+</html>
