@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Directory Tree | CSS Pseudo Selectors</title>
+    <style>
+        body{
+            background-color: #222;
+        }
+        .tree{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 64px;
+            display: inline-block;
+            
+        }
+
+        .tree:hover{
+            color:#222
+
+        }
+
+        .folder{
+            
+            background-image: url(Oxygen-Icons.org-Oxygen-Actions-document-open.64.png);
+            background-repeat: no-repeat;
+            /*height: 18px;*/
+            line-height: 18px;
+            padding: 24px 0 24px 72px;
+            list-style-type: "╠";
+            list-style-position: center;
+            
+        }
+        .folder:hover{
+            background-color: #C1C8C9;
+            transition: 0.35s
+        }
+
+        .file{
+            
+            background-image: url(Oxygen-Icons.org-Oxygen-Mimetypes-application-pdf.64.png);
+            background-repeat: no-repeat;
+            /*height: 18px;*/
+            line-height: 18px;
+            padding: 24px 0 24px 72px;
+            list-style-type: "╠";
+            list-style-position: center;
+            
+        }
+
+        .file:last-child{
+            list-style-type: "╚";
+        }
+
+        .folder:last-child{
+            list-style-type: "╚";
+        }
+
+        .empty{
+            background-image: url(Oxygen-Icons.org-Oxygen-Actions-document-open-folder.64.png);
+        }
+
+        .name{
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="tree">
+       
+        <li class="folder"> 
+            <div class="name"> 
+                <span> Project 1 [DONE] </span>
+
+                </div> 
+           <!--nested lists -->
+            <ul class="tree">
+                <li class="file">
+                    <div class="name"> File 1</div>  
+                </li>
+                <li class="file">
+                    <div class="name"> File 2 </div>
+                </li>
+            </ul>
+
+        </li>
+        <li class="folder"> 
+            <div class="name"> Project 2 [NOW] </div>
+        </li>
+        <li class="folder empty"> 
+           <div class="name"> Project 3 [TBD] </div> 
+        </li>
+    </ul>
+    
+</body>
+</html>
