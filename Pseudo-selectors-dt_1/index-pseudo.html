@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Directory Tree | CSS Pseudo Selectors</title>
+    <style>
+        body{
+            background-color: #222;
+        }
+        .tree{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 55px;
+            display: inline-block;
+            margin-top: 35px;            
+        }
+        .list{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 55px;
+            display: none;
+            margin-top: 27px;  
+            margin-left: -60px;          
+        }
+
+        span a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            /* padding: 15px 0; */
+            /* border: 1px solid #fff; */
+        }
+
+        span a:hover{
+            color:#2b7df8;
+        }
+
+        .folder{            
+            background-image: url(images/Oxygen-Icons.org-Oxygen-Actions-document-open.64.png);
+            background-repeat: no-repeat;
+            /* height: 18px; */
+            line-height: 18px;
+            padding: 24px 0 24px 72px;
+            list-style-type: "╠";
+            list-style-position: center;            
+        }
+        
+        .file{            
+            background-image: url(images/Oxygen-Icons.org-Oxygen-Mimetypes-application-pdf.64.png);
+            background-repeat: no-repeat;
+            /*height: 18px;*/
+            line-height: 18px;
+            padding: 24px 0 24px 72px;
+            list-style-type: "╠";
+            list-style-position: center;            
+        }
+
+        .file:last-child{
+            list-style-type: "╚";
+        }
+
+        .folder:last-child{
+            list-style-type: "╚";
+        }
+
+        .empty{
+            background-image: url(images/Oxygen-Icons.org-Oxygen-Actions-document-open-folder.64.png);
+        }
+        .calendar {
+            background-image: url(images/Oxygen-Icons.org-Oxygen-Actions-view-calendar.64.png);
+        }
+        .doc {
+            background-image: url(images/Oxygen-Icons.org-Oxygen-Actions-document-properties.64.png);
+        }
+
+        .name{
+            font-size: 18px;
+        }
+        #project-one:target {
+            display: block;
+        }
+        #project-two:target {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="tree">
+       
+        <li class="folder"> 
+            <div class="name"> 
+                <span><a href="#project-one">Project 1 [DONE]</a></span>
+                <!--nested lists -->
+                 <ul class="list" id="project-one">
+                     <li class="file doc">
+                         <div class="name ">
+                             <span><a href="">File 1</a></span>
+                         </div>  
+                     </li>
+                     <li class="file calendar">
+                         <div class="name">
+                             <span><a href="">File 2</a></span>
+                         </div>
+                     </li>
+                     <li class="file">
+                         <div class="name">
+                             <span><a href="">File 3</a></span>
+                         </div>
+                     </li>
+                 </ul>
+            </div> 
+
+        </li>
+        <li class="folder"> 
+            <div class="name">
+                <span><a href="#project-two">Project 2 [NOW]</a></span>
+            </div>
+            <!--nested lists -->
+            <ul class="list" id="project-two">
+                <li class="file calendar">
+                    <div class="name">
+                        <span><a href="">File 1</a></span>
+                    </div>
+                </li>
+                <li class="file">
+                    <div class="name">
+                        <span><a href="">File 2</a></span>
+                    </div>
+                </li>
+                <li class="file doc">
+                    <div class="name ">
+                        <span><a href="">File 3</a></span>
+                    </div>
+                </li>
+                <li class="file doc">
+                    <div class="name ">
+                        <span><a href="">File 4</a></span>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li class="folder empty"> 
+           <div class="name">
+            <span><a href="">Project 3 [TBD]</a></span>
+           </div> 
+        </li>
+    </ul>
+    
+</body>
+</html>
