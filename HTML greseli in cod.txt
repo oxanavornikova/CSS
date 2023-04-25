@@ -1,0 +1,14 @@
+HTML greșeli in cod
+Rând 4: UTF-8, virgula de prisos
+Rând 8: lipsește ; dupa blue
+Rând 9: spațiu între 200 și px de prisos
+Rând 10: între images și ul trebuie să fie simbol “-” “ _”, nu spațiu
+Rând 11: culoarea green să scrie fără #
+Rând 13: <br> n-are sens in titlu
+Rând 23: </header>
+Rând 30: logo.jpg   <br> n-are sens
+Rând 34: h1, h2, … trebuie sa fie scrise fără <>, dacă merg ca text
+Rând 37: </p>
+Rând 40:  între images și ul trebuie să fie simbol “-” “ _”, nu spațiu
+Rând 43: <li class=“active ”> nu o se apare in vizualizare
+Rând 45: </a></li> fără spațiu
